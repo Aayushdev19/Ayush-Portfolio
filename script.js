@@ -11,16 +11,3 @@ const lightbox=document.getElementById('imageLightbox'),lightboxImage=document.g
 document.querySelectorAll('.certificate-preview').forEach(button=>button.addEventListener('click',()=>{lightboxImage.src=button.dataset.full;lightbox.classList.add('open');document.body.style.overflow='hidden';lightboxClose.focus()}));
 function closeLightbox(){lightbox.classList.remove('open');lightboxImage.removeAttribute('src');document.body.style.overflow=''}
 lightboxClose.addEventListener('click',closeLightbox);lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox()});document.addEventListener('keydown',event=>{if(event.key==='Escape'&&lightbox.classList.contains('open'))closeLightbox()});
-const lightbox=document.getElementById('certificateLightbox');
-const lightboxImage=lightbox.querySelector('img');
-document.querySelectorAll('.certificate-image').forEach(button=>button.addEventListener('click',()=>{
- lightboxImage.src=button.dataset.full;
- lightboxImage.alt=button.querySelector('img').alt;
- lightbox.classList.add('open');
- lightbox.setAttribute('aria-hidden','false');
- document.body.style.overflow='hidden';
-}));
-function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightboxImage.src='';document.body.style.overflow='';}
-lightbox.querySelector('.lightbox-close').addEventListener('click',closeLightbox);
-lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
