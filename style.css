@@ -28,3 +28,14 @@ footer{padding:25px 0;color:var(--muted);font-size:12px}footer .foot{display:fle
 .lightbox-close{position:absolute;right:24px;top:16px;border:1px solid #ffffff70;background:#ffffff18;color:white;border-radius:50%;width:42px;height:42px;font-size:28px;cursor:pointer}
 @media(max-width:850px){.certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.certificate-grid{grid-template-columns:1fr}.certificate-image{height:220px}.project-preview{height:165px}}
+
+/* Project cards: consistent image frame, card height and alignment */
+.projects{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;grid-auto-rows:1fr;gap:22px}
+.project{height:100%;min-width:0;padding:24px;display:flex;flex-direction:column;overflow:hidden}
+.project-image{display:block;width:100%;aspect-ratio:16/9;height:auto;min-height:0;max-height:none;object-fit:contain;object-position:center;background:#f0f1ed;border:1px solid var(--line);border-radius:4px;margin:0 0 22px}
+.project h3{margin:0 0 10px;font-size:25px;line-height:1.2}
+.project p{font-size:14px;line-height:1.65;margin:0 0 14px}
+.project .tags{margin:0 0 20px;min-height:30px;align-content:flex-start}
+.project-actions{margin-top:auto;padding-top:14px;min-height:34px;align-items:center}
+@media(max-width:850px){.projects{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.project{padding:18px}}
+@media(max-width:650px){.projects{grid-template-columns:1fr}.project{padding:20px}.project-image{aspect-ratio:16/9}}
