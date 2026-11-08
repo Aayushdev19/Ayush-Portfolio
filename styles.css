@@ -988,3 +988,9 @@ dialog::backdrop {
     transition: none !important;
   }
 }
+
+
+.skip-link{position:absolute;left:16px;top:-60px;z-index:1000;padding:10px 14px;background:var(--dk);color:var(--ondk);border-radius:6px;text-decoration:none;font-weight:600}
+.skip-link:focus{top:12px}
+:focus-visible{outline:3px solid var(--ac);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

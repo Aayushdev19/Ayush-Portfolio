@@ -232,9 +232,7 @@ const SHOTS = {
 };
 PROJECTS.forEach((p) => {
   if (SHOTS[p.id]) p.img = SHOTS[p.id];
-}); /* {cat,date,title,summary,body,url} */
-/* ===== end of editable content ===== */
-
+});
 const $ = (s, r = document) => r.querySelector(s),
   esc = (s) =>
     String(s).replace(
