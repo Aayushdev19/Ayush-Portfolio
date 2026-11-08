@@ -1,38 +1,17 @@
-# Ayush Machhi - Portfolio
+# Ayush Machhi — Portfolio
 
-Personal portfolio website for Ayush Machhi, an AI/ML Engineer and Full Stack Developer.
+Personal portfolio website for Ayush Machhi.
 
-## About
+## Deploy
+This is a static HTML website. Deploy the repository root to Vercel with:
+- Framework preset: Other
+- Build command: empty
+- Output directory: empty
+- Install command: empty
 
-The site highlights my projects, technical skills, experience, certificates, and professional updates. It is built as a responsive static website with a clean, modern design.
+## Files
+- `index.html` — complete website, styling and interactions
+- `assets/ayush-machhi.jpg` — profile photograph
+- `Ayush_Machhi_Resume.pdf` — downloadable resume
 
-## Built With
-
-- HTML5
-- CSS3
-- JavaScript
-
-## Run Locally
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Aayushdev19/Ayush-Portfolio.git
-   ```
-
-2. Open `index.html` in a browser.
-
-   For the best local development experience, serve the folder with any static file server.
-
-## Project Structure
-
-```text
-index.html                 Main portfolio page
-styles.css                 Website styles and responsive layout
-script.js                  Interactive behavior and links
-Ayush_Machhi_Resume.pdf    Resume
-```
-
-## Contact
-
-The portfolio includes links to my GitHub, LinkedIn, and resume in the contact section.
+The contact links open the visitor's email application. No server-side form submission is configured.
